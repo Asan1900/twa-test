@@ -1,28 +1,31 @@
 {
   "name": "ton-starter-twa-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://Asan1900.github.io/twa-test.git",
+  "homepage": "https://Asan1900.github.io/twa-test",
   "author": "Abdr",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "configbot": "node configure.js"
+    "configbot": "node configure.js",
+    "pradeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@orbs-network/ton-access": "^2.2.2",
+    "@aws-crypto/sha256-js": "^5.0.0",
+    "@orbs-network/ton-access": "^2.3.3",
     "@tanstack/react-query": "^4.24.4",
-    "@tonconnect/ui-react": "^0.0.14",
-    "@twa-dev/sdk": "^6.4.2",
+    "@tonconnect/ui-react": "^2.0.0-beta.2",
+    "@twa-dev/sdk": "^6.9.0",
     "buffer": "^6.0.3",
     "is-mobile": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styled-components": "^5.3.6",
-    "ton": "13.3.0",
-    "ton-core": "^0.46.0",
+    "ton": "^13.6.1",
+    "ton-core": "^0.52.0",
     "ton-crypto": "^3.2.0",
     "use-local-storage": "^2.3.6",
     "vite-plugin-node-polyfills": "^0.7.0"
@@ -33,7 +36,8 @@
     "@types/react-dom": "^18.0.10",
     "@types/styled-components": "^5.1.26",
     "@vitejs/plugin-react": "^3.0.1",
-    "typescript": "^4.9.5",
+    "gh-pages": "^6.0.0",
+    "typescript": "^5.2.2",
     "vite": "^4.0.4"
   }
 }
